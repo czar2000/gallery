@@ -3,12 +3,13 @@
 
 <div class="container-fluid">
     <div class="row">
-        {%if photos %}
+        {% if photos %}
             {% for photo in photos %}
                 <div class="col-sm-3">
                 <div class="thumbnail">
                     <img src="{{album.pic.url}}" class ="img img-responsive" alt="" style="height:270px; width:80%;">
                     <div class="caption">
+                        <h5>{{photo.picture}}</h5>
                         <h5>{{album.album_name}}</h5>
                         <h5>{{photo.photo_name}}</h5>
                         <h5>{{photo.caption}}</h5>
