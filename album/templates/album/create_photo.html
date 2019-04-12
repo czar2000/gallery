@@ -3,9 +3,11 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-sm-4"></div>
         <div class="col-sm-4">
             <div class="panel panel-success">
                 <div class="panel-body">
+                    <h3 class="text-info text-capitalize">{% if objects %}Update Photo{% else %}New Photo{% endif %}</h3>
                     <h3 class= "text-info text-capitalize"></h3>
                     <hr>
                     <form method="post" enctype="multipart/form-data">
@@ -18,5 +20,6 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-4"></div>
     </div>
 </div>
